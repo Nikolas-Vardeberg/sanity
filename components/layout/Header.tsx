@@ -14,7 +14,7 @@ const Header = () => {
     }
 
     return(
-        <header className="fixed bg-secondary-950 w-full py-6 border-b sm:border-none">
+        <header className="fixed bg-secondary-950 z-50 w-full py-6 border-b sm:border-none">
             <div className="container flex justify-between">
                 <div className="flex items-center gap-10">
                     <Link href="/" className="z-10">
