@@ -5,7 +5,7 @@ import Logo from "../elements/icons/Logo"
 import { Menu } from "lucide-react"
 import { useState } from "react"
 import cx from "classnames"
-
+import headerData from "@/data/header"
 
 const Header = () => {
     const [showMenu, setShowMenu] = useState(false);
@@ -23,18 +23,15 @@ const Header = () => {
                     <nav className={cx("flex gap-8 list-none bg-secondary-950 sm:relative sm:translate-y-0 sm:h-fit sm:w-fit absolute h-screen w-screen right-0 top-0 text-white flex-col items-center transition-all justify-center sm:flex-row",
                         showMenu === true ? "translate-y-0": "-translate-y-full"
                     )}>
-                        <li>
-                            <Link href="/">About</Link>
-                        </li>
-                        <li>
-                            <Link href="/">About</Link>
-                        </li>
-                        <li>
-                            <Link href="/">About</Link>
-                        </li>
-                        <li>
-                            <Link href="/">About</Link>
-                        </li>
+                        {headerData.header.map((item, index) => {
+                            return (
+                                <li key={index}>
+                                    <Link className="capitalize" href={item.href}>
+                                        {item.label}
+                                    </Link>
+                                </li>
+                            )
+                        })}
                     </nav>
                 </div>
 
@@ -42,7 +39,7 @@ const Header = () => {
                     <button onClick={toggleMenu} className="p-3 sm:hidden flex items-center justify-center border rounded-full text-white">
                         <Menu />
                     </button>
-                    <button className="border py-3 px-5 rounded-full text-white">Get in Touch</button>
+                    <button className="border hover:bg-white hover:text-black duration-300 py-3 px-5 rounded-full text-white">Get in Touch</button>
                 </div>
             </div>
         </header>
