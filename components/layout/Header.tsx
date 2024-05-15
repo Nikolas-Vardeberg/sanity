@@ -1,0 +1,52 @@
+"use client"
+
+import Link from "next/link"
+import Logo from "../elements/icons/Logo"
+import { Menu } from "lucide-react"
+import { useState } from "react"
+import cx from "classnames"
+
+
+const Header = () => {
+    const [showMenu, setShowMenu] = useState(false);
+    const toggleMenu = () => {
+        setShowMenu((prev) => !prev);
+    }
+
+    return(
+        <header className="fixed bg-secondary-950 w-full py-6 border-b sm:border-none">
+            <div className="container flex justify-between">
+                <div className="flex items-center gap-10">
+                    <Link href="/" className="z-10">
+                        <Logo />
+                    </Link>
+                    <nav className={cx("flex gap-8 list-none bg-secondary-950 sm:relative sm:translate-y-0 sm:h-fit sm:w-fit absolute h-screen w-screen right-0 top-0 text-white flex-col items-center transition-all justify-center sm:flex-row",
+                        showMenu === true ? "translate-y-0": "-translate-y-full"
+                    )}>
+                        <li>
+                            <Link href="/">About</Link>
+                        </li>
+                        <li>
+                            <Link href="/">About</Link>
+                        </li>
+                        <li>
+                            <Link href="/">About</Link>
+                        </li>
+                        <li>
+                            <Link href="/">About</Link>
+                        </li>
+                    </nav>
+                </div>
+
+                <div className="flex z-10 space-x-4">
+                    <button onClick={toggleMenu} className="p-3 sm:hidden flex items-center justify-center border rounded-full text-white">
+                        <Menu />
+                    </button>
+                    <button className="border py-3 px-5 rounded-full text-white">Get in Touch</button>
+                </div>
+            </div>
+        </header>
+    )
+}
+
+export default Header
