@@ -5,7 +5,7 @@ const Features = () => {
     <section>
         <div className="container">
             <div className="flex items-center gap-2 border-b border-neutral-60  pb-4">
-                <span className=""/>
+                <span className="rounded-full bg-primary-300 h-2 w-2"/>
                 <span>Solutions</span>
             </div>
 
@@ -58,7 +58,7 @@ const Features = () => {
                         </div>
                         <button className="text-primary-950">Read More</button>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
