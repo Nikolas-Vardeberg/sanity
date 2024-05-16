@@ -1,4 +1,7 @@
+import { Heading } from "@/components/elements/heading/Heading"
+import { Section } from "@/components/elements/sections/Section"
 import { SubTitle } from "@/components/elements/sub-title/SubTitle"
+import { Container } from "@/components/layout/container/Container"
 import { Linkedin } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
@@ -6,16 +9,15 @@ import Link from "next/link"
 
 const Experts = () => {
     return(
-        <section className="py-48 bg-secondary-950">
-            <div className="container">
-
+        <Section className="bg-secondary-950">
+            <Container>
                 <SubTitle subTitle="Our experts" />
 
                 <div>
                     <div className="flex flex-col gap-4">
-                        <h2 className="text-features leading-none text-white">
+                        <Heading as="h2" className="text-features leading-none text-white">
                             Meet our experts{" "}
-                        </h2>
+                        </Heading>
                         <p className="text-neutral-400">
                             Our team boats top green energy experts, driving innovation in substanibility{" "}
                         </p>
@@ -47,8 +49,8 @@ const Experts = () => {
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </Container>
+        </Section>
     )
 }
 

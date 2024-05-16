@@ -1,18 +1,19 @@
+import { Heading } from "@/components/elements/heading/Heading"
 import Logo from "@/components/elements/icons/Logo"
+import { Section } from "@/components/elements/sections/Section"
+import { SubTitle } from "@/components/elements/sub-title/SubTitle"
+import { Container } from "@/components/layout/container/Container"
 
 
 const Matrics = () => {
     return(
-        <section className="py-48 bg-beige-primary rounded-3xl">
-            <div className="container">
-                <div className="flex items-center gap-2 border-b border-neutral-300 mb-12 sm:mb-14 pb-4">
-                    <span className="w-3 h-3 bg-primary-300 block rounded-full" />
-                    <span>Matrics</span>
-                </div>
+        <Section className="bg-beige-primary rounded-3xl">
+            <Container>
+                <SubTitle subTitle="Metrics" className="text-primary-950"/>
 
                 <div>
                     <div className="mb-12 sm:mb-24">
-                        <h2 className="text-section leading-none">Key to clean future</h2>
+                        <Heading as="h2" className="text-section leading-none">Key to clean future</Heading>
                     </div>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
@@ -49,8 +50,8 @@ const Matrics = () => {
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </Container>
+        </Section>
     )
 }
 

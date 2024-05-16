@@ -1,7 +1,7 @@
 import cx from "clsx";
 type ContainerTypes = {
     children: React.ReactNode;
-    className: string;
+    className?: string;
 }
 
 const Container = ({ children, className}: ContainerTypes) => {

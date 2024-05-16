@@ -1,18 +1,19 @@
+import { Heading } from "@/components/elements/heading/Heading"
 import Ev from "@/components/elements/icons/Ev"
 import Logo from "@/components/elements/icons/Logo"
+import { Section } from "@/components/elements/sections/Section"
+import { SubTitle } from "@/components/elements/sub-title/SubTitle"
+import { Container } from "@/components/layout/container/Container"
 
 const Features = () => {
   return (
-    <section className="py-48 bg-[#fff7ed] rounded-3xl">
-        <div className="container">
-            <div className="flex items-center gap-2 border-b border-neutral-60  pb-4 sm:mb-14 mb-12">
-                <span className="rounded-full bg-primary-300 h-2 w-2"/>
-                <span>Solutions</span>
-            </div>
+    <Section className="bg-[#fff7ed] rounded-3xl">
+        <Container>
+            <SubTitle subTitle="Solutions" className="text-primary-950" />
 
             <div>
                 <div className="mb-12 sm:mb-24">
-                    <h2 className="text-section leading-none">Key to clean future</h2>
+                    <Heading as="h2" className="text-section leading-none">Key to clean future</Heading>
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-8 xl:grid-cols-4">
@@ -62,8 +63,8 @@ const Features = () => {
 
                 </div>
             </div>
-        </div>
-    </section>
+        </Container>
+    </Section>
   )
 }
 
