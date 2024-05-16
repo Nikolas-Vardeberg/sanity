@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import Logo from "../elements/icons/Logo"
+import Logo from "../../elements/icons/Logo"
 import { Menu } from "lucide-react"
 import { useState } from "react"
 import cx from "classnames"

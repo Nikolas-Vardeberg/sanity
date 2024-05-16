@@ -1,5 +1,5 @@
 import { Facebook } from "lucide-react"
-import Logo from "../elements/icons/Logo"
+import Logo from "../../elements/icons/Logo"
 import Link from "next/link"
 
 
