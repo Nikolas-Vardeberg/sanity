@@ -5,7 +5,7 @@ export const buttonStyles = cva("", {
     variants: {
         variant: {
             primary: "",
-            secondary: "bg-primary-300 hover:bg-primary-400 rounded-full px-6 py-4 duration-300",
+            secondary: "py-4 px-5 bg-primary-300 rounded-full hover:bg-primary-400 duration-300 w-fit",
             tetriary: "",
             "tetriary-reversed": "border py-3 px-5 rounded-full text-white hover:bg-primary-300 duration-300 hover:text-black"
         },

@@ -12,7 +12,7 @@ export const Button = (props: ButtonProps) => {
 
     return(
         <button
-            className={cx(buttonStyles({variant, size}), className)}
+            className={cx(buttonStyles({variant, size, className}))}
             {...props}
         >
             {children}

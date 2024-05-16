@@ -3,18 +3,31 @@
 import Link from "next/link"
 import Logo from "../../elements/icons/Logo"
 import { Menu } from "lucide-react"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import cx from "classnames"
 import headerData from "@/data/header"
+import { Button } from "@/components/elements/button/button"
+import { useWindScreenowSize } from "@/hooks/useWindowSize"
+import useDetectScroll from "@smakss/react-scroll-direction"
 
 const Header = () => {
+    const { scrollDir } = useDetectScroll();
+
     const [showMenu, setShowMenu] = useState(false);
     const toggleMenu = () => {
         setShowMenu((prev) => !prev);
     }
 
+    const size = useWindScreenowSize();
+
+    useEffect(() => {
+        if (size.width > 768) {
+            setShowMenu(false);
+        }
+    }, [size.width])
+
     return(
-        <header className="fixed bg-secondary-950 z-10 w-full py-6 border-b sm:border-none">
+        <header className={cx("fixed bg-secondary-950 z-10 w-full py-6 border-b-2 border-primary-300 transition-all", scrollDir === "down" ? "-translate-y-full": "translate-y-0")}>
             <div className="container flex justify-between">
                 <div className="flex items-center gap-10">
                     <Link href="/" className="z-10">
@@ -39,7 +52,7 @@ const Header = () => {
                     <button onClick={toggleMenu} className="p-3 sm:hidden flex items-center justify-center border rounded-full text-white">
                         <Menu />
                     </button>
-                    <button className="border hover:bg-white hover:text-black duration-300 py-3 px-5 rounded-full text-white">Get in Touch</button>
+                    <Button variant="tetriary-reversed">Get in touch</Button>
                 </div>
             </div>
         </header>

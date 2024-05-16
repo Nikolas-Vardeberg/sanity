@@ -11,6 +11,7 @@
   "dependencies": {
     "@sanity/image-url": "^1.0.2",
     "@sanity/vision": "^3.42.1",
+    "@smakss/react-scroll-direction": "^4.1.0",
     "class-variance-authority": "^0.7.0",
     "classnames": "^2.5.1",
     "clsx": "^2.1.1",
