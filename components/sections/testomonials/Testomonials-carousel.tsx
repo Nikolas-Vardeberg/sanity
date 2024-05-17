@@ -45,7 +45,7 @@ const Testomonialscarousel = () => {
                     <div className="text-black flex flex-col">
                         <h3 className="">Jenny Wilson</h3>
                         <p className="text-black text-sm opacity-90">
-                            Solar energy service{" "}
+                            Solar energy service
                         </p>
                     </div>
                 </div>
@@ -71,7 +71,7 @@ const Testomonialscarousel = () => {
                     <div className="text-black flex flex-col">
                         <h3 className="">Jenny Wilson</h3>
                         <p className="text-black text-sm opacity-90">
-                            Solar energy service{" "}
+                            Solar energy service
                         </p>
                     </div>
                 </div>
@@ -97,7 +97,7 @@ const Testomonialscarousel = () => {
                     <div className="text-black flex flex-col">
                         <h3 className="">Jenny Wilson</h3>
                         <p className="text-black text-sm opacity-90">
-                            Solar energy service{" "}
+                            Solar energy service
                         </p>
                     </div>
                 </div>
@@ -123,7 +123,7 @@ const Testomonialscarousel = () => {
                     <div className="text-black flex flex-col">
                         <h3 className="">Jenny Wilson</h3>
                         <p className="text-black text-sm opacity-90">
-                            Solar energy service{" "}
+                            Solar energy service
                         </p>
                     </div>
                 </div>
@@ -149,7 +149,7 @@ const Testomonialscarousel = () => {
                     <div className="text-black flex flex-col">
                         <h3 className="">Jenny Wilson</h3>
                         <p className="text-black text-sm opacity-90">
-                            Solar energy service{" "}
+                            Solar energy service
                         </p>
                     </div>
                 </div>
@@ -175,7 +175,7 @@ const Testomonialscarousel = () => {
                     <div className="text-black flex flex-col">
                         <h3 className="">Jenny Wilson</h3>
                         <p className="text-black text-sm opacity-90">
-                            Solar energy service{" "}
+                            Solar energy service
                         </p>
                     </div>
                 </div>
@@ -201,7 +201,7 @@ const Testomonialscarousel = () => {
                     <div className="text-black flex flex-col">
                         <h3 className="">Jenny Wilson</h3>
                         <p className="text-black text-sm opacity-90">
-                            Solar energy service{" "}
+                            Solar energy service
                         </p>
                     </div>
                 </div>
@@ -227,7 +227,7 @@ const Testomonialscarousel = () => {
                     <div className="text-black flex flex-col">
                         <h3 className="">Jenny Wilson</h3>
                         <p className="text-black text-sm opacity-90">
-                            Solar energy service{" "}
+                            Solar energy service
                         </p>
                     </div>
                 </div>
