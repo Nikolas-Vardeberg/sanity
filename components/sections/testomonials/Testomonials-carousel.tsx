@@ -1,9 +1,9 @@
 "use client"
 
-import { useWindScreenowSize } from '@/hooks/useWindowSize'
-import Image from 'next/image'
-import React from 'react'
-import { Carousel } from 'react-responsive-carousel'
+import { useWindScreenowSize } from "@/hooks/useWindowSize"
+import Image from "next/image"
+import React from "react"
+import { Carousel } from "react-responsive-carousel"
 
 const Testomonialscarousel = () => {
     const size = useWindScreenowSize();

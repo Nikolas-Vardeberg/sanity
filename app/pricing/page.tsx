@@ -51,7 +51,7 @@ const page = () => {
                         </Button>
                         <div>
                             <Heading as="h4" className="my-4">
-                                What's included
+                                Whats included
                             </Heading>
                             <ul className="grid gap-2">
                                 <li className="flex gap-2 items-center">
@@ -93,7 +93,7 @@ const page = () => {
                         </Button>
                         <div>
                             <Heading as="h4" className="my-4">
-                                What's included
+                                Whats included
                             </Heading>
                             <ul className="grid gap-2">
                                 <li className="flex gap-2 items-center">
@@ -135,7 +135,7 @@ const page = () => {
                         </Button>
                         <div>
                             <Heading as="h4" className="my-4">
-                                What's included
+                                Whats included
                             </Heading>
                             <ul className="grid gap-2">
                                 <li className="flex gap-2 items-center">

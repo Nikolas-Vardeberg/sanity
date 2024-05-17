@@ -20,9 +20,9 @@ const page = () => {
                         </Heading>
                         <div>
                             <p className="mb-4">
-                                At flow, we're commited to a substanible future. as a pionnering force in the green energy sector
-                                At flow, we're commited to a substanible future. as a pionnering force in the green energy sector
-                                At flow, we're commited to a substanible future. as a pionnering force in the green energy sector
+                                At flow, were commited to a substanible future. as a pionnering force in the green energy sector
+                                At flow, were commited to a substanible future. as a pionnering force in the green energy sector
+                                At flow, were commited to a substanible future. as a pionnering force in the green energy sector
                             </p>
                             <Button variant="secondary">Read More</Button>
                         </div>
@@ -155,7 +155,8 @@ const page = () => {
                                 </Heading>
                             </div>
                             <p>
-                            At flow, we're commited to a substanible future. as a pionnering force in the green energy sector
+                            At flow, we
+                            re commited to a substanible future. as a pionnering force in the green energy sector
                             </p>
                         </div>
                         <div className="grid gap-4 md:grid-cols-2 py-12 bg-primary-300 p-4 rounded-3xl">
@@ -166,7 +167,7 @@ const page = () => {
                                 </Heading>
                             </div>
                             <p>
-                            At flow, we're commited to a substanible future. as a pionnering force in the green energy sector
+                            At flow, were commited to a substanible future. as a pionnering force in the green energy sector
                             </p>
                         </div>
                         <div className="grid gap-4 md:grid-cols-2 py-12 bg-primary-300 p-4 rounded-3xl">
@@ -177,7 +178,7 @@ const page = () => {
                                 </Heading>
                             </div>
                             <p>
-                            At flow, we're commited to a substanible future. as a pionnering force in the green energy sector
+                            At flow, were commited to a substanible future. as a pionnering force in the green energy sector
                             </p>
                         </div>
                     </div>
